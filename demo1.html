@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+     <div class="button1">
+        <a onclick="getTransactionsByAccount()"><button id="button1"> History </button></a>
+    </div>
+
+    <div class="container">
+        
+        <h1>Buy Products</h1>
+
+        <label for="product_name" class="col-lg-2 control-label">Product Name</label>
+        <input id="product_name" type="text">
+
+        <a onclick="buy_products()"><button id="button"> Buy  </button></a>
+
+    </div>
+
+    <div class="container">
+        
+        <h1>Transfer Ownership</h1>
+
+        <img id="loader" src="https://loading.io/spinners/double-ring/lg.double-ring-spinner.gif">
+
+        <label for="target_address" class="col-lg-2 control-label">Target Address</label>
+        <input id="target_address" type="text">
+
+        <label for="product_name" class="col-lg-2 control-label">Product Name</label>
+        <input id="product_name" type="text">
+
+        <a onclick="transfer_ownership()" class="btn btn-primary"> <button id="button"> Submit  </button> </a>
+
+
+    </div>
+
+    <script src="abi-decoder-master/dist/abi-decoder.js">
+    <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+</html>

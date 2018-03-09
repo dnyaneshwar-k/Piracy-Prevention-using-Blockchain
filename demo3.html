@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <img id="loader" src="https://loading.io/spinners/double-ring/lg.double-ring-spinner.gif">
+
+        <h1>Make Products</h1>
+
+        <label for="product_name" class="col-lg-2 control-label">Product Name</label>
+        <input id="product_name" type="text">
+
+        <label for="amount" class="col-lg-2 control-label">Amount</label>
+        <input id="amount" type="text">
+
+        <label for="LicenseID" class="col-lg-2 control-label">LicenseID</label>
+        <input id="LicenseID" type="text">
+
+        <label for="validity" class="col-lg-2 control-label">Validity</label>
+        <input id="validity" type="text">
+
+        <a onclick="create_product()" class="btn btn-primary"><button id="button"> Submit  </button></a>
+
+    </div>
+
+    
+    <script src="abi-decoder-master/dist/abi-decoder.js">
+    <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+</html>

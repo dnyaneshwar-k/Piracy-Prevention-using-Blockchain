@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1>Register</h1>
+            <label for="name" class="col-lg-2 control-label">Name</label>
+            <input id="name" type="text" required>
+
+            <label for="emailid" class="col-lg-2 control-label">Email-id</label>
+            <input id="emailid" type="email" required>
+
+            <label for="company" class="col-lg-2 control-label">Company</label>
+            <input id="company" type="text" required>
+
+            <label for="password" class="col-lg-2 control-label">Password</label>
+            <input id="password" type="password" required>
+
+            <label for="confirm_password" class="col-lg-2 control-label">Confirm Password</label>
+            <input id="confirm_password" type="password" required>
+
+            <a onclick="Register()" type="submit" class="btn btn-primary"><button id="button"> Register  </button></a>
+    </div>
+
+    <script src="abi-decoder-master/dist/abi-decoder.js">
+    <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+</html>

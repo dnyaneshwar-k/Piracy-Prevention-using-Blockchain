@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div class="container">
+        
+        <h1>Organization Login</h1>
+
+        <img id="loader" src="https://loading.io/spinners/double-ring/lg.double-ring-spinner.gif">
+
+        <label for="org_address" class="col-lg-2 control-label">Address</label>
+        <input id="org_address" type="text">
+
+        <label for="org_password" class="col-lg-2 control-label">Password</label>
+        <input id="org_password" type="password">
+
+        <a onclick="org_validate()" class="btn btn-primary"> <button id="button"> Login  </button> </a>
+
+
+    </div>
+
+    
+    <script src="abi-decoder-master/dist/abi-decoder.js">
+    <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+</html>
